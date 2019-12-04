@@ -11,5 +11,5 @@ fn passing_integer(x : i32 , y: i32)
 }
 
 fn five() -> i32 {
-	5
+	6
 }
