@@ -2,7 +2,7 @@
 #![allow(unused_variables)]
 fn main() {
 enum IpAddrKind {
-    V4(String),
+    V4(u8, u8, u8, u8),
     V6(String),
 }
 
@@ -13,7 +13,7 @@ struct IpAddr {
 
 let home = IpAddr {
     kind: IpAddrKind::V4,
-    address: String::from("127.0.0.1"),
+    address: String::from(127,0, 0, 1);
 };
 
 let loopback = IpAddr {
